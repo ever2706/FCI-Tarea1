@@ -47,7 +47,11 @@ control=0
 while control==0:
     try:  
         N=int(input("Ingrese la cantidad de puntos deseados, recuerde que estos son la cantidad se subintervalos deseados menos uno: "))
-        control=1
+        if N==1:
+            print("N no puede ser 1, esto causará una indefinicion en divisióon por cero en el cálculo de h, ingrese de nuevo por favor")
+            control=0
+        else:
+            control=1
     except:
         print("Ingrese un número, por favor")
 #Si N es un número par se solicita que sea impar, pues se requiere para el método
