@@ -79,7 +79,7 @@ for i in preimagenes:
 
 #Se usa la ecuación de Simpson para saber el resultado de la integral
 #resultado es la variable que guardará el resultado de la integral, siguiendo la formula de la regla de Simpson 
-resultado=resultado=imagenes[0]+imagenes[N-1]
+resultado=imagenes[0]+imagenes[N-1]
 for i in imagenes:
     if imagenes.index(i) % 2 !=0 and imagenes.index(i)!=0 and imagenes.index(i)!=(N-1) :
         resultado= resultado+(4*i)
