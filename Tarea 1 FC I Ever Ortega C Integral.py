@@ -48,7 +48,7 @@ while control==0:
     try:  
         N=int(input("Ingrese la cantidad de puntos deseados, recuerde que estos son la cantidad se subintervalos deseados menos uno: "))
         if N==1:
-            print("N no puede ser 1, esto causará una indefinicion en divisióon por cero en el cálculo de h, ingrese de nuevo por favor")
+            print("N no puede ser 1, esto causará una indefinición en división por cero en el cálculo de h, ingrese de nuevo por favor")
             control=0
         else:
             control=1
@@ -79,7 +79,7 @@ for i in preimagenes:
 
 #Se usa la ecuación de Simpson para saber el resultado de la integral
 #resultado es la variable que guardará el resultado de la integral, siguiendo la formula de la regla de Simpson 
-resultado=a+b
+resultado=resultado=imagenes[0]+imagenes[N-1]
 for i in imagenes:
     if imagenes.index(i) % 2 !=0 and imagenes.index(i)!=0 and imagenes.index(i)!=(N-1) :
         resultado= resultado+(4*i)
