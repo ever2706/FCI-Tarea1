@@ -4,9 +4,6 @@ Created on Sun Feb 28 22:39:31 2021
 
 @author: Ever Ortega Calderón
 """
-#Se importa la biblioteca sympy que ayuda a declarar la x como variable simbólica
-import sympy as sp
-x=sp.Symbol("x")
 
 #Se define la función a trabajar
 def crear_funcion(valor):
